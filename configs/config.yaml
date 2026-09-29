@@ -1,0 +1,45 @@
+project_name: "3D Reconstruction from 2D Images"
+root_dir: "."
+
+data:
+  images_dir: "data/images"
+  masks_dir: "data/masks"
+
+outputs:
+  base_dir: "outputs"
+  colmap_dir: "outputs/colmap"
+  sparse_dir: "outputs/colmap/sparse"
+  logs_dir: "outputs/logs"
+  archive_dir: "outputs/archive"
+  database_path: "outputs/colmap/database.db"
+
+colmap:
+  executable: "C:/Users/DISHA/Downloads/colmap-x64-windows-nocuda/bin/colmap.exe"
+  use_gpu: false
+  camera_model: "SIMPLE_RADIAL"
+  single_camera: true
+  matcher_type: "exhaustive"
+  num_threads: 1
+  sift:
+    max_num_features: 8192
+    max_image_size: 3200
+    first_octave: -1
+    num_octaves: 4
+    edge_threshold: 10
+    peak_threshold: 0.0067
+    magnification: 3
+
+logging:
+  level: "INFO"
+
+validation:
+  min_images: 3
+
+dense:
+  sparse_model: "0"
+  output_dir: "outputs/colmap/dense/0"
+  max_image_size: -1
+  patch_match:
+    num_threads: 1
+  stereo_fusion:
+    num_threads: 1

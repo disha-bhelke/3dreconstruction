@@ -1,0 +1,45 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.venv/
+venv/
+.env
+.env.*
+.pytest_cache/
+.pytest_tmp/
+.idea/
+.vscode/
+*.log
+.DS_Store
+Thumbs.db
+
+# Python tooling and coverage output
+.coverage
+htmlcov/
+coverage.xml
+
+# Local notebooks and editor artifacts
+*.ipynb_checkpoints/
+*.swp
+*.swo
+
+# User-provided media; keep the folder documentation tracked.
+data/images/*
+!data/images/README.md
+data/masks/*
+!data/masks/.gitkeep
+
+# Generated reconstruction data and logs.
+outputs/colmap/database.db
+outputs/colmap/sparse/*
+outputs/colmap/dense/*
+outputs/colmap/*.db-shm
+outputs/colmap/*.db-wal
+outputs/archive/
+outputs/logs/*
+
+# Preserve output directory structure.
+!outputs/logs/.gitkeep
+!outputs/colmap/sparse/.gitkeep
+!outputs/colmap/dense/.gitkeep
