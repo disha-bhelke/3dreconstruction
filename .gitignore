@@ -25,7 +25,8 @@ coverage.xml
 *.swo
 
 # User-provided media; keep the folder documentation tracked.
-# data/images/*
+data/images/*
+!data/images/*.jpeg
 !data/images/README.md
 data/masks/*
 !data/masks/.gitkeep
