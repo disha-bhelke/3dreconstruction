@@ -11,5 +11,4 @@
 </p>
 
 ## Output
-
 ![Sparse reconstruction output](./outputs/reconstruction.png)
