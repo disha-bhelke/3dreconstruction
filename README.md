@@ -11,4 +11,5 @@
 </p>
 
 ## Output
-![Sparse reconstruction output](./outputs/reconstruction.png)
+![Sparse reconstruction output]
+<p align ="center"><img src="./outputs/reconstruction.png" width="13%" alt="Sparse map"></p>
